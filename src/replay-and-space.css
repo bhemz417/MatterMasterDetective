@@ -1,0 +1,32 @@
+/* Matter Detective v3.2: larger, easier-to-read particle lab and replay UI. */
+.sim-page .sim-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;align-items:stretch}
+.sim-page .sim-lab{padding:clamp(16px,2.5vw,32px)}
+.sim-page .particle-canvas-wrap:not(.is-compact){width:100%;height:clamp(420px,44vw,630px);min-height:0;position:relative}
+.sim-page .matter-canvas{width:100%;height:100%}
+.sim-page .sim-info-column{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.sim-page .state-info{min-height:unset;padding:24px 26px}
+.sim-page .lab-notes{min-height:unset;padding:24px 26px}
+.sim-page .state-info>p{font-size:clamp(14px,1.1vw,17px)}
+.sim-page .fact-row,.sim-page .fact-row strong{font-size:13px}
+.sim-page .panel-header{font-size:13px}
+.sim-page .phase-tab{font-size:clamp(12px,1.1vw,15px);padding:14px 10px}
+.sim-page .now-observing,.sim-page .small-outline-btn{font-size:13px}
+.sim-page .temperature-board{margin-top:15px}
+.particle-lab-grid .mission-main .particle-canvas-wrap{height:clamp(340px,33vw,520px)}
+.practice-banner{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:13px 18px;margin-bottom:22px;border:2px solid #a8dcfd;background:#eafbff;border-radius:16px;color:#265778;font-size:14px}
+.practice-banner button{border:1px solid #9ccfed;background:#fff;color:#265778;font-size:13px;font-weight:800;border-radius:13px;padding:10px 13px;cursor:pointer}
+.replay-adventure-card{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin:28px 0;padding:23px 27px;background:linear-gradient(115deg,#fff8db,#fff5fb 50%,#e8faff);border:3px dashed #e4c1ed;border-radius:23px;color:#35446b;box-shadow:0 9px 24px #856abc15}
+.replay-adventure-card strong{font-size:21px}
+.replay-adventure-card p{font-size:15px;line-height:1.55;margin:9px 0}
+.replay-adventure-card small{font-size:12px;color:#66718e}
+.restart-action,.replay-action,.replay-question{border:2px solid #8a67df;background:#f4eaff;color:#6243a8;border-radius:15px;padding:13px 19px;font-size:14px;font-weight:900;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.restart-action{border-color:#eab646;background:#ffda74;color:#70431e;box-shadow:0 4px 0 #dcad5d}
+.restart-action:hover,.replay-action:hover,.replay-question:hover{filter:brightness(.97);transform:translateY(-1px)}
+.finish-actions,.replay-adventure-buttons{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:center}
+.finish-actions{margin-top:18px}
+.replay-fine-print{font-size:12px!important;margin:14px 0 0!important;color:#68768e!important}
+.replay-question{margin-top:13px;padding:9px 14px;font-size:12px}
+.certificate-replay{margin-top:25px}
+@media(max-width:780px){.sim-page .particle-canvas-wrap:not(.is-compact){height:clamp(330px,63vw,500px)}.sim-page .sim-info-column{grid-template-columns:1fr 1fr}.particle-lab-grid .mission-main .particle-canvas-wrap{height:360px}}
+@media(max-width:600px){.sim-page .particle-canvas-wrap:not(.is-compact){height:clamp(265px,68vw,380px)}.sim-page .sim-info-column{grid-template-columns:minmax(0,1fr)}.sim-page .sim-lab{padding:13px}.sim-page .phase-tab{padding:11px 3px;font-size:12px}.sim-page .state-info,.sim-page .lab-notes{padding:20px}.sim-page .fact-row,.sim-page .fact-row strong{font-size:12px}.particle-lab-grid .mission-main .particle-canvas-wrap{height:285px}.replay-adventure-card{padding:18px}.replay-adventure-card strong{font-size:18px}.restart-action,.replay-action{width:100%}.finish-actions .action-btn{width:100%}.replay-adventure-buttons{width:100%}}
+@media(prefers-reduced-motion:reduce){.restart-action:hover,.replay-action:hover,.replay-question:hover{transform:none}}

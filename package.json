@@ -1,0 +1,35 @@
+{
+  "name": "matter-detective-oer",
+  "private": true,
+  "version": "3.3.0",
+  "type": "module",
+  "description": "Child-friendly states of matter detective adventure and simulation",
+  "scripts": {
+    "dev": "concurrently --kill-others -n API,WEB -c yellow,cyan \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "node --watch server/index.js",
+    "dev:client": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "test": "vitest run && node --test server/app.test.js",
+    "check": "npm run test && npm run build",
+    "smoke": "node --test scripts/smoke.test.mjs scripts/particle-model.test.mjs scripts/replay-layout.test.mjs server/app.test.js"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "jsdom": "^25.0.1",
+    "vite": "^6.0.5",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

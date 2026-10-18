@@ -1,0 +1,222 @@
+:root {
+  --ink:#26345e;
+  --muted:#62708c;
+  --purple:#7256de;
+  --lav:#f0e8ff;
+  --line:#dbe9f5;
+  --surface:#fff;
+  --sidebar:#e7f9ff;
+  --shadow:0 10px 0 rgba(66,91,164,.055),0 16px 35px rgba(73,96,168,.08);
+  --teal:#089da7;
+  --gold:#ffd96f;
+  --hero:#fff1b0;
+  --rounded:24px;
+}
+body { color:var(--ink); background:#f8fcff; font-size:15px; }
+body::before { background:radial-gradient(circle at 88% 14%,#fff3b5ac,transparent 29%),radial-gradient(circle at 9% 70%,#d5f6ffae,transparent 36%),linear-gradient(#fcfaff,#f8fcff); }
+h1,h2,h3,strong {letter-spacing:-.02em;}
+h1,h2,h3{color:#26345e;}
+h1{font-weight:950;}
+p {color:#546684;font-size:15px;line-height:1.62;}
+button {touch-action:manipulation;}
+button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{outline:4px solid #ffb548;outline-offset:3px;}
+/* Navigation looks like a cheerful classroom adventure board */
+.sidebar { background:linear-gradient(170deg,#e1f7ff 0%,#edf5ff 51%,#f5edff 100%); box-shadow:5px 0 20px #9db6d122; border-right:3px solid #d7e9f7; }
+.sidebar::before{left:auto;right:-190px;top:-220px;border-color:#95deff52;box-shadow:0 0 0 64px #b3ebff30,0 0 0 125px #ffdbec31;}
+.sidebar-head{padding:25px 21px 18px;}
+.brand{color:#334477;}
+.brand strong{color:#334477;letter-spacing:.045em;font-size:22px;}
+.brand-accent{color:#ef719b!important;}
+.brand small{color:#6a80a7;font-size:10px;letter-spacing:.07em;}
+.sidebar .brand>svg{filter:drop-shadow(0 5px 8px #7d69bf3d);}
+.side-profile{border:2px solid #d8e5fa;background:white;box-shadow:0 5px 0 #b9d6e542;}
+.profile-avatar{border:2px solid #decaff;background:#f3e5ff;font-size:26px;width:44px;height:44px;}
+.side-profile div span{color:#6a85a3;letter-spacing:.07em;font-size:10px;}
+.side-profile div strong{color:#354673;font-size:13px;}
+.online-indicator{background:#25be89;box-shadow:0 0 0 4px #e0faeb;}
+.nav-section-label{color:#7b80ab;letter-spacing:.1em;font-size:11px;}
+.nav-button{min-height:47px;padding:11px 12px;font-size:13px;color:#435579;font-weight:800;border:2px solid transparent;border-radius:13px;}
+.nav-button svg:first-child{color:#8777cf;}
+.nav-button:hover{background:#fff;color:#44369b;border-color:#ddccff;}
+.nav-button.nav-active{background:#fff;color:#5335b5;border:2px solid #bda9ff;box-shadow:0 5px 0 #bda9ff62;}
+.nav-button.nav-active svg:first-child{color:#7256de;}
+.nav-button small{color:#8e79c3;}
+.nav-done{color:#069972;}
+.side-bottom{border-top:2px dashed #cad7ec;background:#ffffff66;}
+.side-score{background:#fff;border:2px solid #f8d88c;padding:12px 6px;border-radius:20px;}
+.side-score>div{color:#dc930a;}
+.side-score>div+div{color:#9069cd;border-left:2px dashed #d9d1f9;}
+.side-score strong{color:#273862;}
+.side-score strong small{color:#687ba3;}
+.side-score span{font-size:10px;color:#617594;letter-spacing:.08em;}
+.credits-nav{color:#4d6288;font-size:12px;}
+.credits-nav:hover,.credits-nav.active{color:#704bc5;}
+.side-close{color:#45316e;}
+.topbar{background:#ffffffed;border-bottom:2px solid #e5edf9;height:76px;}
+.crumb strong{color:#35416a;font-size:13px;}
+.grade-pill{background:#fff1ba;color:#73511d;border:2px solid #ffe087;font-size:11px;}
+.top-points{background:#fff5d3;color:#b86b09;border:2px solid #f7d893;}
+.top-points span{color:#806540;}
+.sound-toggle{background:#e9f8ff;color:#4a75a6;border:2px solid #d4eefb;min-width:41px;min-height:41px;}
+.header-avatar{background:#ffe6f0;border:2px solid #ffcdde;}
+.main-content{padding-top:30px;}
+.site-footer{background:#ffffffb5;border-top:2px dashed #dbe3f5;color:#607597;}
+.page-heading h1{font-size:clamp(2.05rem,3.4vw,3.3rem);line-height:1.15;letter-spacing:-.038em;}
+.page-heading h1 em{background:linear-gradient(90deg,#8159d6,#e1769d);background-clip:text;-webkit-background-clip:text;color:transparent;}
+.heading-copy>p{font-size:15px;color:#536b85;margin-top:11px;}
+.eyebrow{color:#7a53cd;letter-spacing:.09em;font-size:11px;}
+.eyebrow-dark{color:#7256c5;}
+.heading-icon{background:#fff1c9;border:2px solid #ffd16d;color:#9d63bd;border-radius:26px;transform:rotate(6deg);}
+.panel{border:2px solid #e3e9f9;box-shadow:var(--shadow);background:#fff;border-radius:24px;}
+.panel-header{color:#6176a0;font-size:12px;}
+.panel-header strong{color:#354779;font-size:14px;}
+.action-btn{font-size:14px;font-weight:900;border-radius:15px;padding:15px 23px;min-height:51px;box-shadow:0 5px 0 #314a7820;}
+.btn-primary{background:#7558e4;border:2px solid #6950c8;box-shadow:0 6px 0 #56429a40;color:#fff;}
+.btn-primary:hover{background:#6142ca;box-shadow:0 4px 0 #56429a40;}
+.btn-secondary{background:#eaf7ff;color:#345d94;border:2px solid #b8dcf4;}
+.btn-outline{color:#5d4fbd;border:2px solid #c9baf5;background:#fff;}
+.action-btn:disabled{background:#bac4d9;border-color:#aab5cd;box-shadow:none;}
+.tag-soft{border:2px solid #c6eefa;background:#e8fbff;color:#267c9a;}
+.back-button{color:#7155bb;font-size:13px;font-weight:900;}
+.back-button:hover{color:#4d318c;}
+/* A friendly welcome before any game missions */
+.kid-welcome{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 185px;gap:10px;align-items:center;border:3px solid #ffdb91;border-radius:29px;padding:22px 30px 14px;margin:0 0 19px;background:radial-gradient(circle at 80% 50%,#e6f8ff 0,transparent 40%),linear-gradient(110deg,#fff1c3,#fff9e6 59%,#edf7ff);box-shadow:0 10px 0 #ffdda94a,0 20px 36px #dcae7f22;overflow:hidden;}
+.kid-welcome::before{content:'✨';position:absolute;right:24%;top:14px;font-size:25px;}
+.kid-welcome-copy{position:relative;z-index:1;}
+.kid-welcome-label{display:inline-flex;padding:7px 13px;border-radius:99px;background:#fff;border:2px solid #ffdb98;color:#925c2d;font-size:11px;font-weight:950;letter-spacing:.06em;}
+.kid-welcome h2{font-size:clamp(25px,2.8vw,38px);line-height:1.1;margin:12px 0 11px;}
+.kid-welcome h2 span{color:#8b53c3;}
+.kid-welcome p{font-size:15px;max-width:630px;line-height:1.56;margin:0 0 14px;color:#425477;}
+.kid-welcome-stickers{display:flex;flex-wrap:wrap;gap:8px;padding-bottom:8px;}
+.kid-welcome-stickers span{display:inline-block;padding:8px 10px;background:#fff;border:2px solid #e2d5f4;border-radius:13px;font-weight:850;font-size:12px;color:#48567b;}
+.kid-welcome-mascot{width:185px;height:auto;align-self:end;justify-self:center;filter:drop-shadow(0 9px 4px #a3b7d351);animation:buddyBop 3.3s ease-in-out infinite alternate;}
+@keyframes buddyBop{to{transform:translateY(-7px) rotate(2deg)}}
+.sim-intro-banner{background:#e8faff;border:2px solid #bbeaf7;border-radius:18px;color:#326584;gap:10px;}
+.sim-intro-banner span{color:#9b5dc5;font-size:11px;}
+.sim-intro-banner strong{font-size:13px;}
+.sim-lab{padding:24px;}
+.phase-tab{border-radius:16px;font-size:13px;font-weight:900;background:#f6f8ff;border:2px solid #dfe7fc;}
+.phase-tab:hover{background:#fff2ff;border-color:#d3baf7;}
+.phase-tab.active{background:#f0e9ff;border:2px solid #ab8cf2;color:#5944a3;box-shadow:0 5px 0 #bbadf253;}
+.particle-canvas-wrap{border:3px solid #99d7eb;border-radius:22px;box-shadow:0 7px 0 #bddff466,0 12px 25px #9cbcd730;overflow:hidden;background:#effaff;}
+.matter-canvas{display:block;width:100%;height:300px;}
+.canvas-controls{gap:12px;}
+.now-observing strong{color:#6943aa;}
+.small-outline-btn{border:2px solid #d1c5ef;color:#594b9b;background:white;border-radius:12px;font-size:12px;font-weight:850;min-height:38px;}
+.small-outline-btn:hover{border-color:#a78dec;background:#f8f3ff;}
+.temperature-board{background:#fff8e9;border:2px solid #ffe8b8;border-radius:18px;}
+.temperature-label strong{color:#8651c9;}
+.temp-range{accent-color:#8257df;}
+.same-particles-note{display:flex;gap:9px;align-items:center;background:#f3fff8;border:2px dashed #94dcc5;border-radius:14px;margin:14px 0;padding:11px 14px;}
+.same-particles-note span{font-size:12px;font-weight:950;white-space:nowrap;color:#11846c;}
+.same-particles-note p{margin:0;font-size:12px;color:#436b63;line-height:1.4;}
+.phase-boundary-note{font-size:12px;margin:12px 0 0;color:#5f6d8b;background:#fff;padding:9px 12px;border-radius:10px;}
+.lab-notes{background:#fffae9;border:2px dashed #f6d08d;}
+.lab-notes p,.lab-notes small{color:#695b48;}
+.state-info{border-color:#dce6fb;}
+.fact-row{font-size:12px;}
+.knowledge-check{background:linear-gradient(110deg,#fff,#f7f1ff);border:2px solid #e0ccff;}
+.quick-option{border-radius:17px;border:2px solid #dcdcf8;min-height:55px;font-size:14px;font-weight:850;}
+.quick-option:hover:not(:disabled),.choice-btn:hover:not(:disabled){border-color:#ae8de9;background:#f8f1ff;}
+.compare-explore{color:#7f57c8;}
+.comparison-card{border:2px solid #e3e9f9;border-radius:20px;}
+.comparison-card:hover{border-color:#b4a5ea;}
+.comparison-card.is-selected{background:#f7f0ff;border:3px solid #b9a3ec;padding:15px 13px;}
+.comparison-info strong{font-size:16px;}
+.comparison-info>span,.comparison-info small{font-size:12px;}
+/* Mission map, collectible cards and friendly Dr Chaos */
+.hq-hero{border:3px solid #fad47a;background:radial-gradient(circle at 75% 50%,#d5f6ff 0,transparent 43%),linear-gradient(115deg,#fff2b7,#fff9e6 60%,#e4f5ff);box-shadow:0 10px 0 #f8d8866b,0 20px 32px #ab8d5e24;}
+.hq-noise{background-image:radial-gradient(#e5bf6e 2px,transparent 2px);opacity:.22;}
+.hq-hero-orbit{border-color:#89c5e45e;}
+.hq-hero-orbit.orbit-two{border-color:#8cd2df66;box-shadow:0 0 0 46px #a7e3f01d;}
+.hq-overline{color:#7c4cb5;border:2px solid #dfc5f7;background:#fff9ffe8;letter-spacing:.08em;font-size:11px;}
+.hq-hero h2{color:#2a4168;font-size:clamp(2.2rem,3.6vw,3.45rem);}
+.hq-hero h2 em{color:#8654c3;}
+.hq-hero p{color:#4e6483;font-size:15px;line-height:1.55;max-width:480px;}
+.hq-hero-cta{background:#7458e3;border:2px solid #6348cc;color:#fff;box-shadow:0 6px 0 #5b47a045;font-size:14px;border-radius:17px;}
+.hq-hero-cta:hover{background:#6041c8;}
+.hq-hero-visual .detective-buddy{max-width:100%;height:auto;filter:drop-shadow(0 15px 9px #9caac154);animation:buddyBop 3s ease-in-out infinite alternate;}
+.hero-evidence-stamp{color:#7549a7;border:2px solid #cfc2f3;background:#fff;border-radius:9px;letter-spacing:.04em;}
+.hero-wanted{color:#785b9a;letter-spacing:.03em;font-size:11px;}
+.hero-target{color:#ffad5c;}
+.hq-hero-bottom{background:#ffffffb3;border-top:2px dashed #f2d790;color:#39476c;}
+.hero-status-copy svg{color:#159ea5;}
+.hero-status-copy>span{color:#61738f;}
+.hero-status-copy strong{color:#7255c5;}
+.hero-meter{background:#e4d9fb;height:10px;}
+.hero-meter>div{background:linear-gradient(90deg,#7d5de0,#f3a8d1);}
+.hero-meter-value,.hero-score{color:#526687;font-size:11px;}
+.hero-score{color:#b07521;}
+.dash-progress{background:linear-gradient(110deg,#fff,#f6ebff);}
+.dash-summary>div{border:2px solid #e3e3f7;}
+.mission-card{border:2px solid #dee5fa;border-radius:22px;box-shadow:0 7px 0 #bfcdec40,0 12px 22px #afc9e51d;}
+.mission-card:hover{border-color:#bfa5f0;box-shadow:0 7px 0 #bca8e065,0 16px 30px #b4c1d651;}
+.mission-card>strong{font-size:19px;color:#28385b;}
+.mission-description{color:#5d708a;font-size:13px;}
+.mission-card-top{font-size:10px;color:#586883;}
+.mission-card-bottom{color:#7549c4;font-size:11px;}
+.mission-arrow{background:#ece3ff;color:#694bb3;}
+.mission-card:hover .mission-arrow{background:#7752d0;}
+.mission-symbol{border-radius:18px;transform:rotate(-4deg);background:#ede5ff;font-size:35px;}
+.badge-card{border:2px solid #e8dffc;box-shadow:0 6px 0 #ded6f03b;border-radius:19px;}
+.badge-card.badge-unlocked{background:#f1fff9;border-color:#a5e5d0;}
+.badge-card strong{color:#3d4e72;font-size:13px;}
+.badge-locked{opacity:.75;filter:none;}
+.final-boss-callout{background:linear-gradient(110deg,#ffe3ed,#f5eaff);border:3px solid #e3c4ef;box-shadow:0 8px 0 #dac2f53d;}
+.final-boss-callout h2{color:#3b3669;}
+.final-boss-callout p{color:#605877;font-size:14px;}
+.final-boss-callout .eyebrow{color:#a04e94;}
+.final-boss-callout.boss-ready{background:linear-gradient(110deg,#e3fff5,#f3e9ff);}
+.final-boss-callout .boss-symbol{background:#fff;color:#9460bd;}
+.briefing-card{border:3px solid #ead6ff;}
+.briefing-visual{background:radial-gradient(circle at 50% 35%,#ffdeef,#e3d5ff 75%);}
+.briefing-visual::after{border-color:#8b63c34c;}
+.briefing-goals>div{border:2px solid #e0d9f7;}
+.mission-main,.mission-side{padding:24px;}
+.mission-side h2{font-size:clamp(23px,2.5vw,29px);}
+.choice-btn{font-size:14px;font-weight:750;border:2px solid #e0e5f4;border-radius:15px;min-height:55px;color:#3b4970;}
+.choice-btn.is-correct,.quick-option.correct{background:#e2fff0;border:2px solid #79d1a7;color:#167356;}
+.feedback-success{background:#e9fff5;border:2px solid #a8ebcd;}
+.feedback-error{background:#fff3f0;border:2px solid #efc2b7;}
+.boss-avatar{background:radial-gradient(circle at 50% 30%,#f7d4f1,#dcecff);}
+.escape-banner{background:linear-gradient(110deg,#fff1c5,#f2eaff);}
+.finish-panel{background:radial-gradient(circle at 50% 0%,#fff6b9,#fff 60%);border:3px solid #f7d993;}
+.notebook-next{background:linear-gradient(110deg,#eee6ff,#dff9ff);color:#283762;}
+.notebook-next>svg{color:#7d53c5;}
+.notebook-next strong{color:#273c64;}
+.notebook-next p{color:#526a87;font-size:14px;}
+.toast{background:#4b3f86;border:2px solid #c6b0ff;font-size:14px;}
+/* Particle Lab is a kid-friendly investigation, not a dark diagnostics panel */
+.particle-progress{display:flex;gap:10px;margin:0 0 20px;}
+.particle-progress-stop{flex:1;display:flex;align-items:center;gap:9px;padding:11px 14px;border-radius:16px;background:#f5f5ff;border:2px solid #e5e5f5;color:#7d86a8;font-size:12px;}
+.particle-progress-stop span{width:29px;height:29px;border-radius:50%;background:#e0e3f3;color:#566081;display:grid;place-items:center;font-weight:900;flex:0 0 29px;}
+.particle-progress-stop.current{background:#fff4d6;border-color:#f6cf7d;color:#876026;box-shadow:0 4px 0 #f3d9a46b;}
+.particle-progress-stop.current span{background:#f5b84e;color:#fff;}
+.particle-progress-stop.finished{background:#ecfff6;border-color:#9ee2bc;color:#307754;}
+.particle-progress-stop.finished span{background:#25af7a;color:#fff;}
+.particle-lab-intro{display:flex;align-items:center;gap:12px;padding:14px 21px 13px;margin:0 0 19px;border-radius:24px;border:3px solid #b9e5fa;background:linear-gradient(110deg,#e5f8ff,#f3faff,#f9edff);}
+.particle-lab-buddy{height:100px;width:101px;flex:0 0 101px;overflow:hidden;align-self:flex-end;}
+.particle-lab-buddy .detective-buddy{width:101px;height:108px;}
+.kid-kicker{color:#7251b8;letter-spacing:.09em;font-size:11px;font-weight:950;}
+.particle-lab-intro h2{margin:3px 0 4px;font-size:21px;}
+.particle-lab-intro p{margin:0;font-size:13px;color:#526a87;}
+.particle-lab-sticker{margin-left:auto;color:#a35e35;border:2px solid #ffdb8a;border-radius:14px;padding:9px 10px;transform:rotate(4deg);font-size:10px;font-weight:950;background:#fff8d8;max-width:116px;text-align:center;}
+.particle-lab-grid{align-items:start;}
+.particle-observer-tools{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:14px 0;}
+.particle-observer-tools>span{font-size:12px;color:#3b75a0;font-weight:900;}
+.particle-observation-prompts{margin-top:13px;background:#fff9e8;border:2px dashed #f2d3a5;border-radius:17px;padding:12px 14px;display:flex;flex-wrap:wrap;column-gap:13px;row-gap:6px;font-size:12px;color:#6e5e7b;}
+.particle-observation-prompts strong{color:#7256ae;width:100%;font-size:13px;}
+.particle-question-panel{background:#fff;}
+.particle-reveal{background:#eafff4;border:2px solid #a2e2b9;border-radius:16px;padding:16px;margin:17px 0;}
+.particle-reveal strong{color:#25835e;font-size:14px;}
+.particle-reveal p{font-size:13px;color:#4c745f;margin:7px 0 5px;}
+.particle-reveal span{color:#167e66;font-size:12px;font-weight:900;}
+.particle-hint-button{margin:16px 0 0;padding:10px 14px;border-radius:12px;background:#fff3d7;border:2px solid #ffda9b;color:#865e40;font-size:13px;font-weight:900;}
+.particle-hint{padding:13px 16px;border:2px dashed #f7c67a;background:#fffbee;border-radius:14px;margin-top:10px;color:#65567a;font-size:14px;}
+/* Mobile: large controls, tidy layout, bottom navigation */
+@media(max-width:1060px){.sidebar{width:278px;flex-basis:278px;}}
+@media(max-width:780px){.kid-welcome{grid-template-columns:minmax(0,1fr) 145px;padding:18px 22px 8px;}.kid-welcome-mascot{width:145px;}.hq-hero{min-height:310px;}.particle-lab-sticker{display:none;}.particle-lab-grid{grid-template-columns:1fr;}}
+@media(max-width:600px){.main-content{padding-top:20px;}.page-heading h1{font-size:clamp(1.85rem,8vw,2.4rem);}.heading-copy>p{font-size:14px;}.kid-welcome{display:flex;align-items:flex-start;position:relative;padding:19px 17px 12px;min-height:260px;}.kid-welcome-copy{width:100%;}.kid-welcome h2{font-size:26px;margin:11px 0 7px;}.kid-welcome p{max-width:calc(100% - 90px);font-size:13px;}.kid-welcome-mascot{position:absolute;bottom:-8px;right:-8px;width:128px;max-height:170px;}.kid-welcome-stickers{padding-right:20px;}.kid-welcome-stickers span{font-size:10px;padding:7px 8px;}.sim-lab{padding:14px;}.matter-canvas,.particle-canvas-wrap{height:235px;}.same-particles-note{flex-direction:column;align-items:flex-start;}.phase-tab{font-size:11px;}.small-outline-btn{font-size:11px;}.hq-hero{min-height:440px;}.hq-hero p{color:#536882;font-size:13px;}.hq-hero-visual{opacity:.76;bottom:68px;right:-10px;}.hq-hero h2{font-size:clamp(2.2rem,9vw,3rem);}.hq-hero-cta{font-size:12px;}.hq-hero-bottom{padding:10px 15px;}.badge-grid{gap:10px;}.mission-card{min-height:185px;}.mission-description{font-size:13px;}.particle-lab-intro{padding:13px 13px 12px;gap:8px;}.particle-lab-buddy{width:74px;flex-basis:74px;height:86px;}.particle-lab-buddy .detective-buddy{width:80px;height:86px;}.particle-lab-intro h2{font-size:16px;}.particle-lab-intro p{font-size:12px;}.particle-progress-stop{padding:8px 7px;display:flex;flex-direction:column;font-size:10px;text-align:center;}.particle-progress-stop span{flex-basis:auto;width:27px;height:27px;}.particle-observer-tools{align-items:stretch;}.particle-observer-tools .small-outline-btn{width:100%;justify-content:center;}.particle-observation-prompts span{display:block;width:100%;}.final-boss-callout p{font-size:13px;}.mobile-dock{border-top:2px solid #dfd1f5;}.mobile-dock button{font-size:11px;}.mobile-dock button.active{background:#f0e8ff;color:#684ac2;}.grade-pill{display:none;}}
+@media(max-width:380px){.kid-welcome p{max-width:100%;padding-right:27px;}.kid-welcome-mascot{width:100px;opacity:.65;}.particle-progress-stop strong{font-size:9px;}}
+@media(prefers-reduced-motion:reduce){.kid-welcome-mascot,.hq-hero-visual .detective-buddy{animation:none!important;}}
+@media print{body::before{display:none!important}}
